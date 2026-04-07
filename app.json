@@ -8,6 +8,12 @@
       "expo-router"
     ],
     "name": "fleetManagment",
-    "slug": "fleetManagment"
+    "slug": "fleetManagment",
+    "android": {
+      "package": "com.kalu34.fleetManagment"
+    },
+    "ios": {
+      "bundleIdentifier": "com.kalu34.fleetManagment"
+    }
   }
 }
