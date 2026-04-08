@@ -8,15 +8,26 @@ import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
 
+import android.os.Handler
+import android.os.Looper
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+
 import expo.modules.ReactActivityDelegateWrapper
 
 class MainActivity : ReactActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
-    // Set the theme to AppTheme BEFORE onCreate to support
-    // coloring the background, status bar, and navigation bar.
-    // This is required for expo-splash-screen.
-    setTheme(R.style.AppTheme);
-    super.onCreate(null)
+    // 1. Install the splash screen BEFORE super.onCreate
+    val splashScreen = installSplashScreen()
+    super.onCreate(savedInstanceState)
+
+    // 2. Set the condition to keep the splash screen on screen
+    var keepShowing = true
+    splashScreen.setKeepOnScreenCondition { keepShowing }
+
+    // 3. Set a timer to flip the switch after 2 seconds
+    Handler(Looper.getMainLooper()).postDelayed({
+      keepShowing = false
+    }, 1400) 
   }
 
   /**
