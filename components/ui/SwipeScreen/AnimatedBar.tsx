@@ -21,9 +21,9 @@ const AnimatedBar = ({ scrollX, index }: AnimatedBarProps) => {
       width: interpolate(
         scrollX.value, // 0-1200
         [
-          (index - 1) * SCREEN_WIDTH, 
-          index * SCREEN_WIDTH, 
-          (index + 1) * SCREEN_WIDTH, 
+          (index - 1) * SCREEN_WIDTH,
+          index * SCREEN_WIDTH,
+          (index + 1) * SCREEN_WIDTH,
         ],
         [10, 20, 10],
         Extrapolate.CLAMP,
@@ -31,11 +31,11 @@ const AnimatedBar = ({ scrollX, index }: AnimatedBarProps) => {
       backgroundColor: interpolateColor(
         scrollX.value,
         [
-          (index - 1) * SCREEN_WIDTH, 
-          index * SCREEN_WIDTH, 
-          (index + 1) * SCREEN_WIDTH, 
+          (index - 1) * SCREEN_WIDTH,
+          index * SCREEN_WIDTH,
+          (index + 1) * SCREEN_WIDTH,
         ],
-        [theme.muted, theme.chart2, theme.muted],
+        [theme.muted, theme.foreground, theme.muted],
       ),
     };
   });

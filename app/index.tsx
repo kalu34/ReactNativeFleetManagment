@@ -34,7 +34,7 @@ const SplashScreen = () => {
         }}
       >
         <LinearGradient
-          colors={["transparent", theme.destructive]}
+          colors={["transparent", theme.primary]}
           style={[SplashScreenStyle.contentContainer]}
           locations={[0.1, 0.8]}
         >
@@ -42,8 +42,8 @@ const SplashScreen = () => {
 
           {/* Base Button */}
           <View style={[SplashScreenStyle.baseButtonContainer]}>
-            <BaseButton onPress={() => console.log("")} backgroundColor={theme.accent}>
-              <Text fontSize={15} style={{ color: theme.background, fontFamily: "Lato-Bold" }}>
+            <BaseButton onPress={() => console.log("")} backgroundColor={theme.background}>
+              <Text fontSize={15} style={{ color: theme.primary, fontFamily: "Lato-Black" }}>
                 Get Started
               </Text>
             </BaseButton>
