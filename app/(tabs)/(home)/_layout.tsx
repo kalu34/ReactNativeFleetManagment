@@ -1,9 +1,9 @@
 import { Stack } from "expo-router";
 
-const HomeLayout = () => {
+export default function HomeLayout () {
     return (
-        <Stack.Screen name="HomeScreen" />
+        <Stack>
+            <Stack.Screen name="HomeScreen" />
+        </Stack>
     )
 }
-
-export default HomeLayout
