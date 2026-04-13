@@ -33,12 +33,12 @@ export default function TabLayout() {
         options={{ tabBarLabel: "Map", ...{ customIcon: MapIcon } }}
       />
       <Tabs.Screen
-        name="(set)/SetScreen"
-        options={{ tabBarLabel: "Set", ...{ customIcon: SettingIcon } }}
-      />
-      <Tabs.Screen
         name="(report)/ReportScreen"
         options={{ tabBarLabel: "Report", ...{ customIcon: ReportIcon } }}
+      />
+      <Tabs.Screen
+        name="(set)/SetScreen"
+        options={{ tabBarLabel: "Setting", ...{ customIcon: SettingIcon } }}
       />
       <Tabs.Screen
         name="(profile)/ProfileScreen"

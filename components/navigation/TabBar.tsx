@@ -40,6 +40,7 @@ const TabBar = ({ state, navigation, descriptors, insets }: TabBarProps) => {
           data={Object.entries(descriptors)}
           renderItem={({ item, index }) => (
             <TabBarIcon
+              tabName={item[1]?.options?.tabBarLabel?.toString() ?? ""}
               customIcon={item[1]?.options?.customIcon ?? ""}
               isFocused={state.index === index}
               descriptors={descriptors}
@@ -60,11 +61,11 @@ export default TabBar;
 const TabBarStyle = StyleSheet.create({
   container: {
     width: "100%",
-    height: 55,
+    height: 65,
     alignItems: "center",
     justifyContent: "center",
     position: "absolute",
-    bottom: "6%",
+    bottom: "2%",
   },
   tabBarContainer: {
     width: "80%",
