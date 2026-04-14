@@ -30,7 +30,7 @@ const SplashScreen = () => {
         imageStyle={{
           resizeMode: "cover",
           top: "-20%",
-          height: "100%"
+          height: "100%",
         }}
       >
         <LinearGradient
@@ -42,8 +42,14 @@ const SplashScreen = () => {
 
           {/* Base Button */}
           <View style={[SplashScreenStyle.baseButtonContainer]}>
-            <BaseButton onPress={() => console.log("")} backgroundColor={theme.background}>
-              <Text fontSize={15} style={{ color: theme.primary, fontFamily: "Lato-Black" }}>
+            <BaseButton
+              onPress={() => console.log("")}
+              backgroundColor={theme.background}
+            >
+              <Text
+                fontSize={15}
+                style={{ color: theme.primary, fontFamily: "-Black" }}
+              >
                 Get Started
               </Text>
             </BaseButton>
@@ -67,7 +73,7 @@ const SplashScreenStyle = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "flex-end",
     paddingVertical: 30,
-    gap: 15
+    gap: 15,
   },
   baseButtonContainer: {
     paddingHorizontal: 10,

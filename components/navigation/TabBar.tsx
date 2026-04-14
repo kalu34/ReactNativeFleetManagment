@@ -26,13 +26,14 @@ interface TabBarProps extends Omit<BottomTabBarProps, "descriptors"> {
 
 const TabBar = ({ state, navigation, descriptors, insets }: TabBarProps) => {
   const theme = useTheme();
-  
-  console.log(Object.entries(descriptors));
 
   return (
     <View style={[TabBarStyle.container]}>
       <View
-        style={[TabBarStyle.tabBarContainer, { backgroundColor: theme.card }]}
+        style={[
+          TabBarStyle.tabBarContainer,
+          { backgroundColor: theme.foreground, },
+        ]}
       >
         <Animated.FlatList
           horizontal
@@ -61,20 +62,21 @@ export default TabBar;
 const TabBarStyle = StyleSheet.create({
   container: {
     width: "100%",
-    height: 65,
+    height: 75,
     alignItems: "center",
     justifyContent: "center",
     position: "absolute",
     bottom: "2%",
   },
   tabBarContainer: {
-    width: "80%",
+    width: "85%",
     height: "100%",
-    borderRadius: 10,
+    borderRadius: 20,
+    borderWidth: 1,
   },
   flatListContainerStyle: {
     width: "100%",
-    paddingHorizontal: 10,
+    paddingHorizontal: 15,
     alignItems: "center",
     justifyContent: "space-between",
   },

@@ -33,7 +33,7 @@ const CompanyList = () => {
   }, [showList]);
 
   return (
-    <View style={[CompanyListStyle.container]}>
+    <View style={[CompanyListStyle.container, { borderColor: theme.border }]}>
       <Pressable
         onPress={() => setShowList(!showList)}
         style={[
@@ -43,10 +43,8 @@ const CompanyList = () => {
       >
         <View style={[CompanyListStyle.companyInfoContainer, { gap: 10 }]}>
           <CompanyIcon width={35} height={35} color={theme.primary} />
-          <View style={{ gap: 5 }}>
-            <Text fontSize={14} style={{ fontFamily: "Lato-Bold" }}>
-              General Militry Base
-            </Text>
+          <View>
+            <Text fontSize={14}>General Militry Base</Text>
             <View style={[CompanyListStyle.companyInfoContainer]}>
               <LocationIcon
                 width={15}
@@ -57,7 +55,6 @@ const CompanyList = () => {
                 fontSize={12}
                 style={{
                   color: theme.mutedForeground,
-                  fontFamily: "Lato-Bold",
                 }}
               >
                 {" "}
@@ -91,6 +88,8 @@ const CompanyListStyle = StyleSheet.create({
     width: "100%",
     paddingVertical: 5,
     position: "relative",
+    borderWidth: 1,
+    borderRadius: 20,
   },
   companyContainer: {
     height: 60,
@@ -113,7 +112,7 @@ const CompanyListStyle = StyleSheet.create({
     zIndex: 100,
     height: 200,
     width: "100%",
-    top: 70,
+    top: 75,
     left: 0,
     borderRadius: 15,
     borderWidth: 1,

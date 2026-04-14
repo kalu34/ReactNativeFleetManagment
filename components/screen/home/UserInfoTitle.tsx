@@ -13,18 +13,18 @@ const UserInfoTitle = () => {
         <View
           style={[
             UserInfoTitleStyle.iconContainer,
-            { backgroundColor: theme.background },
+            { backgroundColor: theme.background, borderColor: theme.border },
           ]}
         >
-          <UserIconDefault width={20} height={20} color={theme.foreground} />
+          <UserIconDefault width={20} height={20} color={theme.primary} />
         </View>
         <View>
-          <Text fontSize={13} style={{ fontFamily: "Lato-Black" }}>
+          <Text fontSize={13}>
             Kaleb Kassu
           </Text>
           <Text
             fontSize={11}
-            style={{ fontFamily: "Lato-Bold", color: theme.mutedForeground }}
+            style={{ color: theme.mutedForeground }}
           >
             Center Port Admin
           </Text>
@@ -34,7 +34,7 @@ const UserInfoTitle = () => {
         <Pressable
           style={[
             UserInfoTitleStyle.iconContainer,
-            { backgroundColor: theme.card },
+            { backgroundColor: theme.card, borderColor: theme.border },
           ]}
         >
           <NotificationIcon width={20} height={20} color={theme.foreground} />
@@ -42,7 +42,7 @@ const UserInfoTitle = () => {
         <Pressable
           style={[
             UserInfoTitleStyle.iconContainer,
-            { backgroundColor: theme.card },
+            { backgroundColor: theme.card, borderColor: theme.border },
           ]}
         >
           <DefaultSettingIcon width={20} height={20} color={theme.foreground} />
@@ -72,6 +72,7 @@ const UserInfoTitleStyle = StyleSheet.create({
     borderRadius: 10,
     alignItems: "center",
     justifyContent: "center",
+    borderWidth: .5,
   },
   utilsIconContainer: {
     flexDirection: "row",

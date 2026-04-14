@@ -21,7 +21,9 @@
 		2F620AE97A3C4B238D0A83A9 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC04A67621D341F3A5114B35 /* Lato-Light.ttf */; };
 		22BC800220344E2CAD6DEB56 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73E4395D4164837B7018C82 /* Lato-Black.ttf */; };
 		AB9000ACB900445FAA318570 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 923D595496614ECA9F3A0CEA /* Lato-LightItalic.ttf */; };
-		CB46F619DFBB4B1CB0759C01 /* splash_screen_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA615C4B4D4F2C8F1CEE64 /* splash_screen_bg.jpg */; };
+		B9905D364CAF4CFA9191CEE9 /* Helvetica-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE4CD79A1C94F33930B347A /* Helvetica-Bold.ttf */; };
+		1D0A4C5FC3D14DD4AFC58D72 /* Helvetica.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8FA41C7DDF040A7B1807713 /* Helvetica.ttf */; };
+		7B0EF8167B1E40B4ACACE78B /* Helvetica-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCAC3373FC49C49E715B69 /* Helvetica-light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +45,9 @@
 		FC04A67621D341F3A5114B35 /* Lato-Light.ttf */ = {isa = PBXFileReference; name = "Lato-Light.ttf"; path = "../assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E73E4395D4164837B7018C82 /* Lato-Black.ttf */ = {isa = PBXFileReference; name = "Lato-Black.ttf"; path = "../assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		923D595496614ECA9F3A0CEA /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; name = "Lato-LightItalic.ttf"; path = "../assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2EDA615C4B4D4F2C8F1CEE64 /* splash_screen_bg.jpg */ = {isa = PBXFileReference; name = "splash_screen_bg.jpg"; path = "../assets/images/splash_screen_bg.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6FE4CD79A1C94F33930B347A /* Helvetica-Bold.ttf */ = {isa = PBXFileReference; name = "Helvetica-Bold.ttf"; path = "../assets/fonts/Helvetica-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D8FA41C7DDF040A7B1807713 /* Helvetica.ttf */ = {isa = PBXFileReference; name = "Helvetica.ttf"; path = "../assets/fonts/Helvetica.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4ACCAC3373FC49C49E715B69 /* Helvetica-light.ttf */ = {isa = PBXFileReference; name = "Helvetica-light.ttf"; path = "../assets/fonts/Helvetica-light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +133,9 @@
 				FC04A67621D341F3A5114B35 /* Lato-Light.ttf */,
 				E73E4395D4164837B7018C82 /* Lato-Black.ttf */,
 				923D595496614ECA9F3A0CEA /* Lato-LightItalic.ttf */,
-				2EDA615C4B4D4F2C8F1CEE64 /* splash_screen_bg.jpg */,
+				6FE4CD79A1C94F33930B347A /* Helvetica-Bold.ttf */,
+				D8FA41C7DDF040A7B1807713 /* Helvetica.ttf */,
+				4ACCAC3373FC49C49E715B69 /* Helvetica-light.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -207,7 +213,9 @@
 				2F620AE97A3C4B238D0A83A9 /* Lato-Light.ttf in Resources */,
 				22BC800220344E2CAD6DEB56 /* Lato-Black.ttf in Resources */,
 				AB9000ACB900445FAA318570 /* Lato-LightItalic.ttf in Resources */,
-				CB46F619DFBB4B1CB0759C01 /* splash_screen_bg.jpg in Resources */,
+				B9905D364CAF4CFA9191CEE9 /* Helvetica-Bold.ttf in Resources */,
+				1D0A4C5FC3D14DD4AFC58D72 /* Helvetica.ttf in Resources */,
+				7B0EF8167B1E40B4ACACE78B /* Helvetica-light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

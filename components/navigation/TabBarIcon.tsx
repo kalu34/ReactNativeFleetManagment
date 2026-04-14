@@ -68,7 +68,7 @@ const TabBarIcon = ({
                 path={svgPath}
                 style="stroke"
                 strokeWidth={progress}
-                color={isFocused ? theme.primary : theme.mutedForeground}
+                color={isFocused ? theme.card : theme.mutedForeground}
               />
             </Group>
           </Group>
@@ -78,8 +78,8 @@ const TabBarIcon = ({
         <Text
           fontSize={10}
           style={{
-            color: isFocused ? theme.primary : theme.mutedForeground,
-            fontFamily: "Lato-Black",
+            color: isFocused ? theme.card : theme.mutedForeground,
+            fontFamily: "Helvetica-Bold",
           }}
         >
           {tabName}

@@ -1,0 +1,12 @@
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from "../IconType";
+const FuelIcon = ({ width, height, color, ...props }: IconProps) => (
+  <Svg width={width} height={height} viewBox="0 0 15 15" {...props}>
+    <Path
+      fill={color}
+      d="M13 6v5.5a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 0 10.5 8H9V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9h1.5a.5.5 0 0 1 .5.5v2a1.5 1.5 0 0 0 3 0V5a1 1 0 0 0-1-1V2.49a.5.5 0 0 0-.5-.49.51.51 0 0 0-.5.55V5a1 1 0 1 0 1-1M8 6.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5z"
+    />
+  </Svg>
+);
+export default FuelIcon;
