@@ -35,7 +35,7 @@ const SplashScreenSwipe = () => {
           <View style={{ width: SCREEN_WIDTH, padding: 10, gap: 10 }}>
             <Text
               fontSize={32}
-              style={{ color: theme.background, fontFamily: "Lato-Black" }}
+              style={{ color: theme.background, fontFamily: "Helvetica-Bold" }}
             >
               {item?.title}
             </Text>

@@ -27,7 +27,7 @@ class MainActivity : ReactActivity() {
     // 3. Set a timer to flip the switch after 2 seconds
     Handler(Looper.getMainLooper()).postDelayed({
       keepShowing = false
-    }, 1400) 
+    }, 800) 
   }
 
   /**

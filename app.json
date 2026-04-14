@@ -5,7 +5,8 @@
       "output": "static"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "@maplibre/maplibre-react-native"
     ],
     "name": "fleetManagment",
     "slug": "fleetManagment",

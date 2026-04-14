@@ -14,7 +14,7 @@ const Text = ({ fontSize, children, style, fontFamily }: TextProp) => {
   const StyleProps: StyleProp<TextStyle> = [
     {
       fontSize: dynamicScaledFontSize(fontSize),
-      fontFamily: fontFamily ?? "Lato-Regular",
+      fontFamily: fontFamily ?? "Helvetica",
     },
     style,
   ];
