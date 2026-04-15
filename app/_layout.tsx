@@ -8,7 +8,7 @@ export default function RootLayout() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ThemeProvider value={themeColors.light}>
-        <Stack>
+        <Stack screenOptions={{ headerShown: false }}>
           <Stack.Protected guard={false}>
             <Stack.Screen name="index" options={{ headerShown: false }} />
           </Stack.Protected>

@@ -11,54 +11,41 @@ import { LinearGradient } from "expo-linear-gradient";
 import Text from "../components/typography/Text";
 import SplashScreenSwipe from "../components/ui/SwipeScreen/SplashScreenSwipe";
 import BaseButton from "../components/button/BaseButton";
+import { useRouter } from "expo-router";
 
-const { width: SCREEN_WIDTH, height: SCREEN_HEIHGT } = Dimensions.get("screen");
 const SplashScreen = () => {
   const theme = useTheme();
+  const route = useRouter();
 
   return (
-    <SafeAreaView
-      style={[
-        SplashScreenStyle.container,
-        { backgroundColor: theme.background },
-      ]}
-    >
-      {/* Background Image Container */}
-      <ImageBackground
-        source={require("../assets/images/splash_screen_bg.jpg")}
-        style={{ flex: 1 }}
-        imageStyle={{
-          resizeMode: "cover",
-          top: "-20%",
-          height: "100%",
-        }}
+    <View style={[SplashScreenStyle.container]}>
+      <Image
+        source={require("@assets/images/splash_screen_bg.jpg")}
+        style={[StyleSheet.absoluteFill, { width: "100%", height: "100%" }]}
+      />
+      <LinearGradient
+        colors={["transparent", theme.primary]}
+        style={[SplashScreenStyle.contentContainer]}
+        locations={[0.1, 0.8]}
       >
-        <LinearGradient
-          colors={["transparent", theme.primary]}
-          style={[SplashScreenStyle.contentContainer]}
-          locations={[0.1, 0.8]}
-        >
-          <SplashScreenSwipe />
+        <SplashScreenSwipe />
 
-          {/* Base Button */}
-          <View style={[SplashScreenStyle.baseButtonContainer]}>
-            <BaseButton
-              onPress={() => console.log("")}
-              backgroundColor={theme.background}
+        {/* Base Button */}
+        <View style={[SplashScreenStyle.baseButtonContainer]}>
+          <BaseButton
+            onPress={() => route.push("/(auth)/LoginScreen")}
+            backgroundColor={theme.background}
+          >
+            <Text
+              fontSize={15}
+              style={{ color: theme.primary, fontFamily: "Helvetica-Bold" }}
             >
-              <Text
-                fontSize={15}
-                style={{ color: theme.primary, fontFamily: "-Black" }}
-              >
-                Get Started
-              </Text>
-            </BaseButton>
-          </View>
-        </LinearGradient>
-      </ImageBackground>
-
-      {/* Expo Gradeint */}
-    </SafeAreaView>
+              Get Started
+            </Text>
+          </BaseButton>
+        </View>
+      </LinearGradient>
+    </View>
   );
 };
 
@@ -66,7 +53,8 @@ export default SplashScreen;
 
 const SplashScreenStyle = StyleSheet.create({
   container: {
-    flex: 1,
+    width: "100%",
+    height: "100%",
   },
   contentContainer: {
     flex: 1,
@@ -76,6 +64,6 @@ const SplashScreenStyle = StyleSheet.create({
     gap: 15,
   },
   baseButtonContainer: {
-    paddingHorizontal: 10,
+    paddingHorizontal: 15,
   },
 });

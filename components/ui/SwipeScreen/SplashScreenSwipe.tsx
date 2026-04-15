@@ -39,7 +39,7 @@ const SplashScreenSwipe = () => {
             >
               {item?.title}
             </Text>
-            <Text fontSize={12} style={{ color: theme.background }}>
+            <Text fontSize={12} style={{ color: theme.background, lineHeight: 16 }}>
               {item?.body}
             </Text>
           </View>
